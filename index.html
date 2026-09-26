@@ -3,15 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UST CICS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
         <header>
             <nav>
+                <div id="brand-container">
+                    <a href="#"><img src="images/cics-logo.png" alt="UST CICS LOGO" id="brand-logo"></a>
+                    <div id="brand-text">
+                        <span id="brand-subtext">UNIVERSITY OF SANTO TOMAS</span>
+                        <span id="brand-maintext">College of Information and Computing Sciences</span>
+                    </div>
+                </div>
                 
+                <!--Hamburger button for mobile-->
+                <input type="checkbox" id="menu">
+                <label for="menu" id="hamburger-icon">
+                    <img src="images/menu-icon.svg" alt="hamburger icon" id="menu-open">
+                    <img src="images/close-icon.svg" alt="close icon" id="menu-close">
+                </label>
+
+                <div id="nav-links-container">
+                    <a href="#" class="nav-links active">Home</a>
+                    <a href="#" class="nav-links">Program</a>
+                    <a href="#" class="nav-links">Community</a>
+                    <button class="btn-primary nav">ENROLL NOW</button>
+                </div>
             </nav>
         </header>
+
+        <section id="hero-section">
+            <div id="hero-content">
+                <h1 id="h1-hero">College of Information and Computing Sciences</h1>
+                <p id="hero-subtext">Empowering Thomasians through computing, technology, and innovation. CICS prepares future-ready professionals to build solutions, solve problems, and make a meaningful impact in a rapidly changing world.</p>
+                <button class="btn-primary hero">LEARN MORE</button>
+            </div>
+            
+        </section>
     </main>
+
 </body>
 </html>
