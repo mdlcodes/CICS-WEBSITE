@@ -251,7 +251,7 @@ hr{
     gap: 4rem;
 }
 
-.degree-card{
+article.degree-card{
     width: 30%;
     height: auto;
     padding: 3rem 4rem;
@@ -262,7 +262,7 @@ hr{
     align-items: flex-start;
     gap: 1rem;
 }
-.degree.h5{
+.degree-title{
     font-family: var(--main-font);
     font-size: 2rem;
     line-height: 28px;
@@ -679,7 +679,7 @@ footer{
         align-items: center;
     }
 
-    .degree-card{
+    article.degree-card{
         width: 90%;
         align-items: center;
     }
@@ -687,7 +687,7 @@ footer{
     .degree-timeline{
         display: none;
     }
-    .degree.h5{
+    .degree-title{
         font-size: 1.6rem;
         text-align: center;
     }

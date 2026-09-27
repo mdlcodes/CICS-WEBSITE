@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <header>
+     <header>
             <nav>
                 <div id="brand-container">
                     <a href="#"><img src="images/cics-logo.png" alt="UST CICS LOGO" id="brand-logo"></a>
@@ -33,8 +32,9 @@
                 </div>
 
             </nav>
-        </header>
+    </header>
 
+    <main>
         <section id="hero-section">
             <div id="hero-content">
                 <h1 id="h1-hero">College of Information and Computing Sciences</h1>
@@ -56,15 +56,15 @@
             </div>
 
             <div class="vision-mission-container">
-                <div class="about-card vision">
+                <article class="about-card vision">
                     <h4 class="card-title">Vision</h4>
                     <p>The Institute of Information and Computing Sciences envisions itself as a premier and innovative institution in Information Technology Education and research in the Asia-Pacific Region.</p>
-                </div>
+                </article>
 
-                <div class="about-card mission">
-                    <h4  class="card-title">Mission</h4>
+                <article class="about-card mission">
+                    <h4 class="card-title">Mission</h4>
                     <p>The Institute of Information and Computing Sciences of the University of Santo Tomas, under the inspiration of its model, Saint Thomas Aquinas, and its patron, Saint Vincent Ferrer, declares its commitment to the pursuit of truth and the formation of technically competent ITE professionals endowed with a strong commitment to lifelong learning, social responsibility and a desire for leadership in the spirit of service in their respective fields of specialization.</p>
-                </div>
+                </article>
             </div>
         </section>
         
@@ -79,33 +79,33 @@
            
             <p class="section-subtitle">Explore our undergraduate programs designed to shape the future of technology and innovation.</p>
                 <div class="degree-card-container">
-                    <div class="degree-card cs">
-                        <div class="degree-card-title">
-                            <h5 class="degree h5">Bachelor of Science in Computer Science</h5>
-                            <span class="degree-timeline">BSCS • 4 Years</span>
-                        </div>
-                        <p>Focuses on the study of concepts and theories, algorithmic foundations, and new developments in computing. Equips students with a strong foundation for designing software and future technologies.</p>
-                        <button class="btn-primary degree">Learn More</button>
+                <article class="degree-card cs">
+                    <div class="degree-card-title">
+                        <h5 class="degree-title">Bachelor of Science in Computer Science</h5>
+                        <span class="degree-timeline">BSCS • 4 Years</span>
                     </div>
+                    <p>Focuses on the study of concepts and theories, algorithmic foundations, and new developments in computing. Equips students with a strong foundation for designing software and future technologies.</p>
+                    <button class="btn-primary btn-card">Learn More</button>
+                </article>
 
-                    <div class="degree-card cs">
-                        <div class="degree-card-title">
-                             <h5 class="degree h5">Bachelor of Science in Information System</h5>
-                            <span class="degree-timeline">BSIS • 4 Years</span>
-                        </div>
-                        <p>Combines systems administration, server management, and network architecture. Focuses on the utilization of software to plan, install, customize, operate, and manage networks.</p>
-                        <button class="btn-primary degree">Learn More</button>
+                <article class="degree-card cs">
+                    <div class="degree-card-title">
+                        <h5 class="degree-title">Bachelor of Science in Information System</h5>
+                        <span class="degree-timeline">BSIS • 4 Years</span>
                     </div>
+                    <p>Combines systems administration, server management, and network architecture. Focuses on the utilization of software to plan, install, customize, operate, and manage networks.</p>
+                    <button class="btn-primary btn-card">Learn More</button>
+                </article>
 
-                    <div class="degree-card cs">
-                        <div class="degree-card-title">
-                            <h5 class="degree h5">Bachelor of Science in Information Technology</h5>
-                            <span class="degree-timeline">BSIT • 4 Years</span>
-                        </div>
-                        <p>Equips students with the knowledge to design and implement business solutions. Focuses on business process management, data analytics, and organizational computing systems strategy.</p>
-                        <button class="btn-primary degree">Learn More</button>
+                <article class="degree-card cs">
+                    <div class="degree-card-title">
+                        <h5 class="degree-title">Bachelor of Science in Information Technology</h5>
+                        <span class="degree-timeline">BSIT • 4 Years</span>
                     </div>
-                </div>
+                    <p>Equips students with the knowledge to design and implement business solutions. Focuses on business process management, data analytics, and organizational computing systems strategy.</p>
+                    <button class="btn-primary btn-card">Learn More</button>
+                </article>
+            </div>
         </section>
 
         <!--===========-================================-->
@@ -116,26 +116,28 @@
                     <h3 class="contact-card-title">Contact Information</h3>
                     <hr class="contact-hr">
                     
-                    <div class="contact-group">
-                        <h4 class="contact-subtitle">Administration Office</h4>
-                        <p class="contact-text">
-                            2/F Saint Pier Giorgio Frassati Building<br>
-                            University of Santo Tomas<br>
-                            España Boulevard, Sampaloc<br>
-                            Manila 1008, Philippines
-                        </p>
-                    </div>
+                    <address class="contact-address">
+                        <div class="contact-group">
+                            <h4 class="contact-subtitle">Administration Office</h4>
+                            <p class="contact-text">
+                                2/F Saint Pier Giorgio Frassati Building<br>
+                                University of Santo Tomas<br>
+                                España Boulevard, Sampaloc<br>
+                                Manila 1008, Philippines
+                            </p>
+                        </div>
 
-                    <div class="contact-group">
-                        <div class="contact-item phone">
-                            <img src="images/icons/phone-icon.svg" alt="phone icon" class="contact-icon">                            
-                            <span class="contact-text">+63-2-3406-1611 local 8518</span>
+                        <div class="contact-group">
+                            <div class="contact-item phone">
+                                <img src="images/icons/phone-icon.svg" alt="" aria-hidden="true" class="contact-icon">                            
+                                <a href="tel:+63234061611" class="contact-text contact-link-plain">+63-2-3406-1611 local 8518</a>
+                            </div>
+                            <div class="contact-item mail">
+                                <img src="images/icons/mail-icon.svg" alt="" aria-hidden="true" class="contact-icon">                            
+                                <a href="mailto:cics@ust.edu.ph" class="contact-link">cics@ust.edu.ph</a>
+                            </div>
                         </div>
-                        <div class="contact-item mail">
-                            <img src="images/icons/mail-icon.svg" alt="mail icon" class="contact-icon">                            
-                            <a href="mailto:cics@ust.edu.ph" class="contact-link">cics@ust.edu.ph</a>
-                        </div>
-                    </div>
+                    </address>
 
                     <div class="contact-group">
                         <div class="contact-item time">
