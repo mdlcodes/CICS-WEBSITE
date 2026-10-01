@@ -448,7 +448,7 @@ article.degree-card{
 .list{
     list-style: none;
 }
-.leader-card figure {
+.leader-card {
     margin: 0;
     padding: 0;
     display: flex;
@@ -469,12 +469,12 @@ article.degree-card{
 .leader-img:hover{
     transform: scale(1.03);
 }
-figcaption > .leader-h6{
+.leader-h6{
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.2rem;
 } 
-figcaption > .leader-position{
+.leader-position{
     color: #BC0F26;
     font-size:1.4rem;
     font-weight: 600;
