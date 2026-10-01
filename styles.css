@@ -175,7 +175,7 @@ nav{
     gap: 1rem;
 }
 
-h3{
+h2{
     font-family: var(--main-font);
     color: #212226;
     font-size: 3rem;    
@@ -191,6 +191,7 @@ hr{
 }
 
 .section-title{
+    margin-top: 1.2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -215,6 +216,7 @@ hr{
 }
 .vision-mission-container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
@@ -246,6 +248,7 @@ hr{
 
 .degree-card-container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -315,14 +318,15 @@ article.degree-card{
 .contact-card-container{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     padding: 0 3%;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .contact-card{
-    width: 50%;
+    width: 45%;
     background-color: white;
     border-top: 4px solid #8C2323;
     border-radius: 8px;
@@ -424,7 +428,7 @@ article.degree-card{
     padding: 0 5%;
 }
 
-.leadership-list {
+.leadership-list-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -436,13 +440,15 @@ article.degree-card{
 }
 
 .leader-card {
+    padding: 2rem;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
 }
-
-
-.leader-card figure {
+.list{
+    list-style: none;
+}
+.leader-card {
     margin: 0;
     padding: 0;
     display: flex;
@@ -450,6 +456,8 @@ article.degree-card{
     align-items: center;
     font-family: var(--main-font, sans-serif);
     gap: 0.75rem;
+    transition: transform 0.3s ease-in;
+
 }
 
 .leader-img {
@@ -457,21 +465,82 @@ article.degree-card{
     height: 10rem;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease-in    ;
 
 }
-.leader-img:hover{
+.leader-card:hover{
     transform: scale(1.03);
 }
-figcaption > h6{
+.leader-h6{
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.2rem;
 } 
-figcaption > p{
+.leader-position{
     color: #BC0F26;
     font-size:1.4rem;
     font-weight: 600;
+}
+#org-section {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#org-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+    margin-top: 1rem;
+   
+}
+.org-card-list {
+    width: 30%;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+.org-card-list:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.org-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    font-family: var(--main-font, sans-serif);
+}
+.org-card-img-container {
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+}
+
+.org-card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.org-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.org-card-title {
+    font-size: 2rem;
+    color: #591E29;
+}
+.org-card-description{
+    font-size: 1.4rem;
+    color: #4B5563;
+    line-height: 1.4;
 }
 /*FOOTER*/
 footer{
@@ -705,7 +774,7 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    h3{
+    h2{
         font-size: 2.4rem;
     }
 
@@ -736,7 +805,6 @@ footer{
     }
 
     .degree-card-container{
-        flex-direction: column;
         align-items: center;
     }
 
@@ -766,8 +834,6 @@ footer{
     }
 
     .contact-card-container{
-        flex-direction: column;
-        align-items: center;
         padding: 0 5%;
         gap: 2rem;
     }
@@ -817,7 +883,7 @@ footer{
         font-size: 1.1rem;
     }
 
-    .leadership-list {
+    .leadership-list-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         max-width: 620px;       
@@ -825,29 +891,50 @@ footer{
         padding: 0 1rem;       
     }
 
-  .leader-card {
-    height: 100%;
-    margin: 0;            
-    border-radius: 4px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    padding: 1.25rem 0.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .leader-card {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        box-shadow: 0px 3px 15px rgba(120, 119, 119, 0.25);
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  figcaption > h6 {
-    font-size: 1rem;
-    line-height: 1.25;
-    margin: 0.25rem 0;
-  }
+    figcaption > h6 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin: 0.25rem 0;
+    }
 
-  figcaption > p {
-    font-size: 0.9rem;
-    line-height: 1.2;
-    margin: 0;
-  }
+    figcaption > p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        margin: 0;
+    }
 
+    .org-card-list {
+            width: 100%;
+            margin: 0 2rem;
+    }
+    #org-card-container {   
+        gap: 1.5rem;
+    }
+    .org-card-img-container {
+        width: 4rem;
+        height: 4rem;
+        flex-shrink: 0;
+    }
+    .org-card-title {
+        font-size: 1.3rem;
+        color: #591E29;
+    }
+    .org-card-description{
+        font-size: 1rem;
+        color: #4B5563;
+        line-height: 1rem;
+    }
 }
 
 
