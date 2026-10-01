@@ -456,6 +456,8 @@ article.degree-card{
     align-items: center;
     font-family: var(--main-font, sans-serif);
     gap: 0.75rem;
+    transition: transform 0.3s ease-in;
+
 }
 
 .leader-img {
@@ -463,10 +465,9 @@ article.degree-card{
     height: 10rem;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease-in;
 
 }
-.leader-img:hover{
+.leader-card:hover{
     transform: scale(1.03);
 }
 .leader-h6{
