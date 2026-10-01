@@ -501,6 +501,11 @@ article.degree-card{
     background: #ffffff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+.org-card-list:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 .org-card {
     display: flex;
