@@ -5,16 +5,19 @@
 }
 html{
     font-size: 62.5%;
-
 }
 :root{
     --main-font: 'Inter', sans-serif;
+    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    --box-shadow-hover: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    --btn-main-color: #BC0F26;
 }
 body{
     min-width: 320px;
+    font-family: var(--main-font);
 }
 
-header{
+.home-header{
     width: 100%;
     background: linear-gradient(to right, #8D0F25 22%, #4C0607 100%);
     padding: 1rem 0;
@@ -160,7 +163,7 @@ nav{
 }
 
 
-/* ABOUT SECTION */
+                                /* ABOUT SECTION */
 #about-section{
     width: 100%;
     min-height: 400px;
@@ -243,7 +246,7 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 1rem 1.2   rem;
+    padding: 1rem 1.2rem;
 }
 
 .degree-card-container{
@@ -260,20 +263,13 @@ article.degree-card{
     width: 30%;
     height: auto;
     padding: 3rem 4rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
     border-radius: 8px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-article.degree-card:hover{
-    transform: scale(1.03);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
-
 .degree-title{
     font-family: var(--main-font);
     font-size: 2rem;
@@ -310,7 +306,7 @@ article.degree-card:hover{
     width: 100%;
 }
 
-
+                                /*CONTACT SECTION*/
 #contact-section{
     width: 100%;
     background-color: #F9FAFB;
@@ -320,8 +316,6 @@ article.degree-card:hover{
     align-items: center;
     font-family: var(--main-font);
 }
-
-/*CONTACT STYLING*/
 .contact-card-container{
     width: 100%;
     display: flex;
@@ -331,14 +325,13 @@ article.degree-card:hover{
     padding: 0 3%;
     gap: 1rem;
 }
-
 .contact-card{
     width: 45%;
     background-color: white;
-    border-top: 4px solid #8C2323;
-    border-radius: 8px;
+    border-top: 0.4rem solid #8C2323;
+    border-radius: 0.8rem;
     padding: 3.2rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -352,7 +345,7 @@ article.degree-card:hover{
 
 .contact-hr{
     width: 100%;
-    height: 1px;
+    height: 0.1rem;
     background-color: #E5E7EB;
     border-radius: 0;
 }
@@ -414,7 +407,7 @@ article.degree-card:hover{
 .contact-image-container{
     width: 100%;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     overflow: hidden;
 }
 
@@ -424,9 +417,9 @@ article.degree-card:hover{
     min-height: 260px;
     object-fit: cover;
     display: block;
-    border-radius: 6px;
+    border-radius: 0.6rem;
 }
-/*LEADERSHIP SECTION*/
+                                /*LEADERSHIP SECTION*/
 .leadership-section {
     width: 100%;
     display: flex;
@@ -487,6 +480,7 @@ article.degree-card:hover{
     font-size:1.4rem;
     font-weight: 600;
 }
+                                /*ORGANIZATION SECTION*/                      
 #org-section {
     width: 100%;
     margin: 2rem auto;
@@ -506,13 +500,13 @@ article.degree-card:hover{
 .org-card-list {
     width: 30%;
     background: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     border-radius: 12px;
     transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 .org-card-list:hover{
     transform: translateY(-3px);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-hover);
 }
 .org-card {
     display: flex;
@@ -549,7 +543,183 @@ article.degree-card:hover{
     color: #4B5563;
     line-height: 1.4;
 }
-/*FOOTER*/
+                                /*CICS Updates*/
+#updates-section {
+    width: 100%;
+    min-height: 250px;
+    margin: 3rem auto;
+}
+.update-card-container{
+    margin-top: 2rem;
+    width:100%;
+    overflow-x: hidden;
+    padding: 1% 2%;
+}
+.update-card-group {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+.update-card{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-x: hidden;
+    margin-top: 1rem;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+.update-card:hover{
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-hover);
+}
+.update-card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.update-content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: justify;
+}
+.update-card-category {
+    color: #C08018;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.update-card-title {
+    color: #1F2937;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    margin: 0;
+}
+.update-card-description {
+    font-size: 0.9rem;
+    color: #4B5563;
+    line-height: 1rem;
+}
+.update-button-link{
+    color: #BC0F26;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: color 0.2s ease;
+}
+.update-button-link:hover{
+    color: #8C2323;
+}
+.update-card-animation{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 2rem;
+    animation: scroll-left 20s linear infinite;
+}
+@keyframes scroll-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+                                /*PATRON SAINT SECTION */
+#patron-saint-section {
+    width: 100%;
+    background-color: #4A1521;
+    color: #ffffff;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#saint-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.saint-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.saint-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.saint-type {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #D4AF37; 
+}
+.saint-name {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0.3rem 0 0 0;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+}
+.saint-description {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    color: #E5E7EB;
+}
+.saint-connection {
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 4px solid #D4AF37;
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+}
+.connection-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #D4AF37;
+    margin: 0 0 0.5rem 0;
+}   
+.connection-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #D1D5DB;
+    margin: 0;
+}
+.saint-feast {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #FCD34D;
+    margin-top: 0.5rem;
+}
+.saint-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.saint-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 3px solid #D4AF37;
+}
+                                /*FOOTER*/
 footer{
     width: 100%;
     background: linear-gradient(to right, #8D0F25 22%, #4C0607 100%);
@@ -559,7 +729,6 @@ footer{
 
 .footer-container{
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 0 8%;
     display: flex;
@@ -633,8 +802,6 @@ footer{
     letter-spacing: 0.3px;
 }
 @media (max-width: 880px) {
-
-   
     nav {
         width: 100%;
         padding: 0.8rem 5%;
@@ -678,7 +845,7 @@ footer{
     #menu-close {
         display: none;
     }
-    /*oremove the ham when input is checked */
+    /*remove the ham when input is checked */
     #menu:checked ~ #hamburger-icon #menu-open {
         display: none;
     }
@@ -731,8 +898,7 @@ footer{
         display: flex;
     }
     
-    
-    /*HERO SECTION*/
+                                        /*HERO SECTION*/
     #hero-section{
         width: 100%;
         min-height: calc(50vh - 2rem);
@@ -773,9 +939,7 @@ footer{
         height: 3rem;
         font-size: 1.1rem;
     }
-    /******************/
-    /*     ABOUT     */
-    /******************/
+                                            /*     ABOUT     */
     .vision-mission-container{
         display: flex;
         flex-direction: column;
@@ -802,9 +966,7 @@ footer{
         line-height: 2rem;
     }
 
-    /******************/
-    /*    DEGREE SECTION   */
-    /******************/
+                                    /*    DEGREE SECTION   */
     .section-subtitle{
         font-size: 1.4rem;
         line-height: 2rem;
@@ -828,10 +990,12 @@ footer{
         text-align: center;
         line-height: 2rem;
     }
-
-    /******************/
-    /*     CONTACT SECTION     */
-    /******************/
+    .degree-card > p{
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+                                /*     CONTACT SECTION     */
     #contact-section{
         padding: 3rem 0;
     }
@@ -854,9 +1018,7 @@ footer{
         min-height: 220px;
     }
 
-    /******************/
-    /*     FOOTER     */
-    /******************/
+                                     /*     FOOTER     */
 
     footer{
         padding: 4rem 0 2.5rem;
@@ -885,7 +1047,7 @@ footer{
     .footer-copyright{
         font-size: 1.1rem;
     }
-
+                                            /*LEADERSHIP SECTION*/
     .leadership-list-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -898,7 +1060,7 @@ footer{
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        box-shadow: 0px 3px 15px rgba(120, 119, 119, 0.25);
+        box-shadow: var(--box-shadow);
         padding: 1rem 2rem;
         display: flex;
         flex-direction: column;
@@ -910,17 +1072,16 @@ footer{
         line-height: 1.25rem;
         margin: 0.25rem 0;
     }
-
     figcaption > p {
         font-size: 0.9rem;
         line-height: 1.2;
         margin: 0;
     }
-
+                                            /*ORGANIZATION SECTION*/
     .org-card-list {
-            width: 100%;
-            margin: 0 2rem;
-    }
+        width: 100%;
+        margin: 0 2rem;
+}
     #org-card-container {   
         gap: 1.5rem;
     }
@@ -938,9 +1099,98 @@ footer{
         color: #4B5563;
         line-height: 1rem;
     }
+                                            /*CICS UPDATES*/
+    .update-card-container{
+        padding: 0 10%;
+    }
+    .update-card-animation{
+        animation: none;
+    }
+    .update-card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .update-card{
+        width: 100%;         
+        max-width: 500px;
+        height: 300px;
+    }
+    .update-card-img {
+        width: 100%;
+        height: 400px;
+    }
+    .update-content {
+        padding: 0.5rem 0.9rem;  
+        gap: 0.6rem;
+    }
+    .update-card-category {
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+    }
+    .update-card-title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.2px;
+    }
+    .update-card-description {
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
+    .update-button-link{
+        font-size: 1rem;
+        margin-top: 0;
+    }
+                                            /*PATRON SAINT SECTION*/
+    #patron-saint-section {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    #saint-container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .saint-header{
+        text-align: center;
+    }
+    .saint-info {
+       text-align: justify;
+    }
+    .saint-type {
+        font-size: 1.3rem;
+    }
+    .saint-name {
+        font-size: 2.3rem;
+        margin: 0.5rem 0 0 0;
+        line-height: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+    .saint-description {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #E5E7EB;
+    }
+    .saint-connection-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }   
+    .saint-connection-text {
+        font-size: 0.8rem;
+        line-height: 1.5;     
+    }
+    .saint-feast {
+        font-size: 0.7rem;
+    }
+    
 }
 
-/*COMPARISON TABLE*/
+
+                                        /*COMPARISON TABLE*/
 .table-wrapper{
     width: 100%;
     overflow-x: auto;
@@ -972,28 +1222,7 @@ footer{
     background-color: #F9FAFB;
 }
 
-/*SECTION SPACING*/
-#comparison-section{
-    padding: 4rem 0;
-}
-
-#departments-section{
-    padding: 4rem 0;
-}
-
-#recognitions-section{
-    padding: 4rem 0;
-}
-
-.section-title{
-    margin-bottom: 1rem;
-}
-
-.table-wrapper{
-    margin-bottom: 2rem;
-}
-
-/*DEPARTMENTS SECTION*/
+                                        /*DEPARTMENTS SECTION*/
 .department-card-container{
     width: 100%;
     display: flex;
@@ -1007,7 +1236,7 @@ footer{
     width: 30%;
     text-align: center;
     padding: 3rem 2rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
     border-radius: 8px;
     font-family: var(--main-font);
 }
@@ -1031,72 +1260,6 @@ footer{
     color: #4B5563;
 }
 
-.department-card-container,
-.recognition-card-container{
-    margin: 1rem 0;
-}
-
-/*RECOGNITIONS SECTION*/
-.recognition-card-container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 8%;
-}
-
-.recognition-card{
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1.6rem;
-    padding: 2.4rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-    font-family: var(--main-font);
-}
-
-.recognition-logo-container{
-    width: 12rem;
-    height: 12rem;
-    flex-shrink: 0;
-}
-
-.recognition-logo{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.recognition-text{
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.recognition-title{
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #212226;
-}
-
-.recognition-programs{
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #8C0F26;
-    line-height: 1.8rem;
-}
-
-.recognition-description{
-    font-size: 1.3rem;
-    line-height: 2rem;
-    color: #4B5563;
-}
-
 @media (max-width: 880px){
     .table-wrapper{
         padding: 0 5%;
@@ -1111,40 +1274,4 @@ footer{
     .department-card{
         width: 90%;
     }
-
-    .recognition-card-container{
-        flex-direction: column;
-        align-items: center;
-        padding: 0 5%;
-    }
-
-        /*RECOGNITIONS SECTION*/
-    .recognition-card-container{
-        padding: 0 5%;
-    }
-
-    .recognition-card{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .recognition-text{
-        align-items: center;
-    }
-    
-        /*SECTION SPACING*/
-    #comparison-section,
-    #departments-section,
-    #recognitions-section{
-        padding: 2.5rem 0;
-    }
 }
-
-h3{
-    font-family: var(--main-font);
-    font-size: 3rem;    
-    font-weight: 600;
-}
-
