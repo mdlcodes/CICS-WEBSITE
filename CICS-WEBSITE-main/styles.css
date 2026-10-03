@@ -624,9 +624,9 @@ article.degree-card{
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 2rem;
-    /*animation: scroll-left 10s linear infinite;*/
+    animation: scroll-left 10s linear infinite;
 }
-/*
+
 @keyframes scroll-left {
     from {
         transform: translateX(0);
@@ -634,7 +634,7 @@ article.degree-card{
     to {
         transform: translateX(-50%);
     }
-}*/
+}
 
 /*FOOTER*/
 footer{
@@ -1029,35 +1029,49 @@ footer{
         line-height: 1rem;
     }
     /*CICS UPDATES*/
+    .update-card-container{
+        padding: 0 10%;
+    }
+    .update-card-animation{
+        animation: none;
+    }
+    .update-card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
     .update-card{
-        width: 20%;
-        height: 90%;
+        width: 100%;         
+        max-width: 500px;
+        height: 300px;
     }
     .update-card-img {
         width: 100%;
-        height: 100px;
+        height: 200px;
     }
     .update-content {
         padding: 0.3rem 0.5rem;  
         gap: 0.6rem;
     }
     .update-card-category {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
         font-weight: 700;
         letter-spacing: 0.2px;
     }
     .update-card-title {
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
         letter-spacing: 0.2px;
 
     }
     .update-card-description {
-        font-size: 0.5rem;
-        line-height: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
     }
     .update-button-link{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-top: 0;
     }
 }
