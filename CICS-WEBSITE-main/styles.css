@@ -1120,10 +1120,10 @@ footer{
     }
     .update-card-img {
         width: 100%;
-        height: 200px;
+        height: 400px;
     }
     .update-content {
-        padding: 0.3rem 0.5rem;  
+        padding: 0.5rem 0.9rem;  
         gap: 0.6rem;
     }
     .update-card-category {
@@ -1135,7 +1135,6 @@ footer{
         font-size: 1.5rem;
         line-height: 1.5rem;
         letter-spacing: 0.2px;
-
     }
     .update-card-description {
         font-size: 0.9rem;
@@ -1151,7 +1150,7 @@ footer{
         padding: 2rem 1rem;
     }
     #saint-container {
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: center;
         gap: 3rem;
@@ -1168,7 +1167,7 @@ footer{
     .saint-name {
         font-size: 2.3rem;
         margin: 0.5rem 0 0 0;
-        line-height: 1.2rem;
+        line-height: 1.8rem;
         letter-spacing: 0.1rem;
     }
     .saint-description {
