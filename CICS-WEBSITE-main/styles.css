@@ -5,10 +5,12 @@
 }
 html{
     font-size: 62.5%;
-
 }
 :root{
     --main-font: 'Inter', sans-serif;
+    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    --box-shadow-hover: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    --btn-main-color: #BC0F26;
 }
 body{
     min-width: 320px;
@@ -161,7 +163,7 @@ nav{
 }
 
 
-/* ABOUT SECTION */
+                                /* ABOUT SECTION */
 #about-section{
     width: 100%;
     min-height: 400px;
@@ -244,7 +246,7 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 1rem 1.2   rem;
+    padding: 1rem 1.2rem;
 }
 
 .degree-card-container{
@@ -261,7 +263,7 @@ article.degree-card{
     width: 30%;
     height: auto;
     padding: 3rem 4rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
     border-radius: 8px; 
     display: flex;
     flex-direction: column;
@@ -304,7 +306,7 @@ article.degree-card{
     width: 100%;
 }
 
-
+                                /*CONTACT SECTION*/
 #contact-section{
     width: 100%;
     background-color: #F9FAFB;
@@ -314,8 +316,6 @@ article.degree-card{
     align-items: center;
     font-family: var(--main-font);
 }
-
-/*CONTACT STYLING*/
 .contact-card-container{
     width: 100%;
     display: flex;
@@ -325,14 +325,13 @@ article.degree-card{
     padding: 0 3%;
     gap: 1rem;
 }
-
 .contact-card{
     width: 45%;
     background-color: white;
-    border-top: 4px solid #8C2323;
-    border-radius: 8px;
+    border-top: 0.4rem solid #8C2323;
+    border-radius: 0.8rem;
     padding: 3.2rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -346,7 +345,7 @@ article.degree-card{
 
 .contact-hr{
     width: 100%;
-    height: 1px;
+    height: 0.1rem;
     background-color: #E5E7EB;
     border-radius: 0;
 }
@@ -408,7 +407,7 @@ article.degree-card{
 .contact-image-container{
     width: 100%;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     overflow: hidden;
 }
 
@@ -418,9 +417,9 @@ article.degree-card{
     min-height: 260px;
     object-fit: cover;
     display: block;
-    border-radius: 6px;
+    border-radius: 0.6rem;
 }
-/*LEADERSHIP SECTION*/
+                                /*LEADERSHIP SECTION*/
 .leadership-section {
     width: 100%;
     display: flex;
@@ -481,6 +480,7 @@ article.degree-card{
     font-size:1.4rem;
     font-weight: 600;
 }
+                                /*ORGANIZATION SECTION*/                      
 #org-section {
     width: 100%;
     margin: 2rem auto;
@@ -500,13 +500,13 @@ article.degree-card{
 .org-card-list {
     width: 30%;
     background: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     border-radius: 12px;
     transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 .org-card-list:hover{
     transform: translateY(-3px);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-hover);
 }
 .org-card {
     display: flex;
@@ -543,7 +543,7 @@ article.degree-card{
     color: #4B5563;
     line-height: 1.4;
 }
-/*CICS Updates*/
+                                /*CICS Updates*/
 #updates-section {
     width: 100%;
     min-height: 250px;
@@ -570,12 +570,12 @@ article.degree-card{
     overflow-x: hidden;
     margin-top: 1rem;
     border-radius: 12px;
-    box-shadow: 0px 3px 15px rgba(120, 119, 119, 0.25);
+    box-shadow: var(--box-shadow);
     transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 .update-card:hover{
     transform: translateY(-3px);
-    box-shadow: 0px 3px 15px rgba(120, 119, 119, 0.25);
+    box-shadow: var(--box-shadow-hover);
 }
 .update-card-img {
     width: 100%;
@@ -624,18 +624,17 @@ article.degree-card{
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 2rem;
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 20s linear infinite;
 }
-
 @keyframes scroll-left {
     from {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
     to {
         transform: translateX(-50%);
     }
 }
-/*PATRON SAINT SECTION */
+                                /*PATRON SAINT SECTION */
 #patron-saint-section {
     width: 100%;
     background-color: #4A1521;
@@ -720,7 +719,7 @@ article.degree-card{
     border-radius: 4px;
     border: 3px solid #D4AF37;
 }
-/*FOOTER*/
+                                /*FOOTER*/
 footer{
     width: 100%;
     background: linear-gradient(to right, #8D0F25 22%, #4C0607 100%);
@@ -730,7 +729,6 @@ footer{
 
 .footer-container{
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 0 8%;
     display: flex;
@@ -804,8 +802,6 @@ footer{
     letter-spacing: 0.3px;
 }
 @media (max-width: 880px) {
-
-   
     nav {
         width: 100%;
         padding: 0.8rem 5%;
@@ -849,7 +845,7 @@ footer{
     #menu-close {
         display: none;
     }
-    /*oremove the ham when input is checked */
+    /*remove the ham when input is checked */
     #menu:checked ~ #hamburger-icon #menu-open {
         display: none;
     }
@@ -902,8 +898,7 @@ footer{
         display: flex;
     }
     
-    
-    /*HERO SECTION*/
+                                        /*HERO SECTION*/
     #hero-section{
         width: 100%;
         min-height: calc(50vh - 2rem);
@@ -944,9 +939,7 @@ footer{
         height: 3rem;
         font-size: 1.1rem;
     }
-    /******************/
-    /*     ABOUT     */
-    /******************/
+                                            /*     ABOUT     */
     .vision-mission-container{
         display: flex;
         flex-direction: column;
@@ -973,9 +966,7 @@ footer{
         line-height: 2rem;
     }
 
-    /******************/
-    /*    DEGREE SECTION   */
-    /******************/
+                                    /*    DEGREE SECTION   */
     .section-subtitle{
         font-size: 1.4rem;
         line-height: 2rem;
@@ -1004,9 +995,7 @@ footer{
         line-height: 1.7rem;
         text-align: center;
     }
-    /******************/
-    /*     CONTACT SECTION     */
-    /******************/
+                                /*     CONTACT SECTION     */
     #contact-section{
         padding: 3rem 0;
     }
@@ -1029,9 +1018,7 @@ footer{
         min-height: 220px;
     }
 
-    /******************/
-    /*     FOOTER     */
-    /******************/
+                                     /*     FOOTER     */
 
     footer{
         padding: 4rem 0 2.5rem;
@@ -1060,7 +1047,7 @@ footer{
     .footer-copyright{
         font-size: 1.1rem;
     }
-
+                                            /*LEADERSHIP SECTION*/
     .leadership-list-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -1073,7 +1060,7 @@ footer{
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        box-shadow: 0px 3px 15px rgba(120, 119, 119, 0.25);
+        box-shadow: var(--box-shadow);
         padding: 1rem 2rem;
         display: flex;
         flex-direction: column;
@@ -1090,11 +1077,11 @@ footer{
         line-height: 1.2;
         margin: 0;
     }
-
+                                            /*ORGANIZATION SECTION*/
     .org-card-list {
-            width: 100%;
-            margin: 0 2rem;
-    }
+        width: 100%;
+        margin: 0 2rem;
+}
     #org-card-container {   
         gap: 1.5rem;
     }
@@ -1112,7 +1099,7 @@ footer{
         color: #4B5563;
         line-height: 1rem;
     }
-    /*CICS UPDATES*/
+                                            /*CICS UPDATES*/
     .update-card-container{
         padding: 0 10%;
     }
@@ -1158,6 +1145,7 @@ footer{
         font-size: 1rem;
         margin-top: 0;
     }
+                                            /*PATRON SAINT SECTION*/
     #patron-saint-section {
         width: 100%;
         padding: 2rem 1rem;
@@ -1203,7 +1191,7 @@ footer{
 }
 
 
-/*COMPARISON TABLE*/
+                                        /*COMPARISON TABLE*/
 .table-wrapper{
     width: 100%;
     overflow-x: auto;
@@ -1235,7 +1223,7 @@ footer{
     background-color: #F9FAFB;
 }
 
-/*DEPARTMENTS SECTION*/
+                                        /*DEPARTMENTS SECTION*/
 .department-card-container{
     width: 100%;
     display: flex;
@@ -1249,7 +1237,7 @@ footer{
     width: 30%;
     text-align: center;
     padding: 3rem 2rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
     border-radius: 8px;
     font-family: var(--main-font);
 }
